@@ -1,0 +1,22 @@
+{
+  "system": {
+    "hostname": "DESKTOP-94CGUS8",
+    "os": "Linux",
+    "version": "6.6.87.2-microsoft-standard-WSL2",
+    "architecture": "x86_64",
+    "timestamp": "2026-05-08T16:20:53.825876"
+  },
+  "cpu": {
+    "cpu_percent": 0.0
+  },
+  "memory": {
+    "total_mb": 7862,
+    "used_mb": 651,
+    "free_mb": 7038
+  },
+  "disk": {
+    "total_gb": 1007,
+    "used_gb": 3,
+    "free_gb": 952
+  }
+}
