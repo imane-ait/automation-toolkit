@@ -6,7 +6,7 @@ def list_ec2_instances():
     """Liste toutes les instances EC2"""
     ec2 = boto3.client('ec2', region_name='eu-west-3')
     response = ec2.describe_instances()
-    
+
     instances = []
     for reservation in response['Reservations']:
         for instance in reservation['Instances']:
@@ -16,7 +16,7 @@ def list_ec2_instances():
                 "state": instance['State']['Name'],
                 "region": "eu-west-3"
             })
-    
+
     return instances
 
 
@@ -24,14 +24,14 @@ def list_s3_buckets():
     """Liste tous les buckets S3"""
     s3 = boto3.client('s3')
     response = s3.list_buckets()
-    
+
     buckets = []
     for bucket in response['Buckets']:
         buckets.append({
             "name": bucket['Name'],
             "created": bucket['CreationDate'].isoformat()
         })
-    
+
     return buckets
 
 
@@ -39,7 +39,7 @@ def list_iam_users():
     """Liste tous les utilisateurs IAM"""
     iam = boto3.client('iam')
     response = iam.list_users()
-    
+
     users = []
     for user in response['Users']:
         users.append({
@@ -47,7 +47,7 @@ def list_iam_users():
             "created": user['CreateDate'].isoformat(),
             "arn": user['Arn']
         })
-    
+
     return users
 
 

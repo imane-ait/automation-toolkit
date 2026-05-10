@@ -14,7 +14,7 @@ jobs:
         run: sudo apt-get install shellcheck -y
 
       - name: Check bash scripts
-        run: shellcheck scripts-bash/*.sh
+        run: shellcheck -S error scripts-bash/*.sh
 
   lint-python:
     runs-on: ubuntu-latest
