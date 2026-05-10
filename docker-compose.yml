@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  audit:
+    image: automation-toolkit
+    volumes:
+      - ./scripts-python/reports:/app/reports

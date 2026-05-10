@@ -1,0 +1,22 @@
+{
+  "system": {
+    "hostname": "0591b603e70a",
+    "os": "Linux",
+    "version": "6.6.87.2-microsoft-standard-WSL2",
+    "architecture": "x86_64",
+    "timestamp": "2026-05-10T11:07:35.675671"
+  },
+  "cpu": {
+    "cpu_percent": 0.0
+  },
+  "memory": {
+    "total_mb": 7862,
+    "used_mb": 906,
+    "free_mb": 6956
+  },
+  "disk": {
+    "total_gb": 1007,
+    "used_gb": 8,
+    "free_gb": 947
+  }
+}
